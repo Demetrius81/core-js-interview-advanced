@@ -116,6 +116,8 @@
 
 Это хорошее решение для того, чтобы скрыть внутреннюю логику от посторонних глаз и производить всю тяжелую работу исключительно через интерфейс, который вы определите для использования в других частях вашего приложения. Этот паттерн очень похож на немедленно-вызываемые функции (IIFE), за тем исключением, что модуль вместо функции, возвращает объект.
 
+[Назад к теме](#модули-в-javascript)
+
  - [https://largescalejs.ru/module-pattern/](https://largescalejs.ru/module-pattern/)
  - [https://medium.com/nuances-of-programming/изучаем-шаблоны-проектирования-в-javascript](https://medium.com/nuances-of-programming/%D0%B8%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-99ad7bc861c8)
  - [https://webdevblog.ru/shablon-modul-v-javascript/](https://webdevblog.ru/shablon-modul-v-javascript/)
@@ -223,6 +225,8 @@ function somePrivateFunction(){
 }
 ```
 
+[Назад к теме](#модули-в-javascript)
+
  - [https://tproger.ru/translations/js-modules-formats-loaders-builders](https://tproger.ru/translations/js-modules-formats-loaders-builders)
  - [https://learn.javascript.ru/modules-intro](https://learn.javascript.ru/modules-intro)
  - [https://habr.com/ru/articles/501198/](https://habr.com/ru/articles/501198/)
@@ -298,6 +302,8 @@ import {sayHi} from './say.js'; // импорт в конце файла
 
 На практике импорты, чаще всего, располагаются в начале файла. Но это только для большего удобства.
 
+[Назад к теме](#модули-в-javascript)
+
  - [https://learn.javascript.ru/modules-intro](https://learn.javascript.ru/modules-intro)
  - [https://learn.javascript.ru/import-export](https://learn.javascript.ru/import-export)
  - [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/export](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/export)
@@ -334,6 +340,8 @@ export function bye() {
 Динамический импорт работает в обычных скриптах, он не требует указания `script type="module"`.
 Хотя `import()` и выглядит похоже на вызов функции, на самом деле это специальный синтаксис, так же, как, например, `super()`.
 Так что мы не можем скопировать import в другую переменную или вызвать при помощи .call/apply. Это не функция.
+
+[Назад к теме](#модули-в-javascript)
 
  - [https://learn.javascript.ru/modules-dynamic-imports](https://learn.javascript.ru/modules-dynamic-imports)
  - [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/import](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/import)
@@ -396,6 +404,8 @@ var result = (function () {
 result; // "Barry"
 ```
 
+[Назад к теме](#функциональные-шаблоны)
+
  - [https://developer.mozilla.org/ru/docs/Glossary/Callback_function](https://developer.mozilla.org/ru/docs/Glossary/Callback_function)
  - [https://developer.mozilla.org/ru/docs/Glossary/IIFE](https://developer.mozilla.org/ru/docs/Glossary/IIFE)
  - [https://learn.javascript.ru/callbacks](https://learn.javascript.ru/callbacks)
@@ -443,6 +453,8 @@ fs.readdir(source, function (err, files) {
 2. Используйте поднятие функций чтобы переместить объявление функций в нижнюю часть страницы.
 3. Обрабатывайте каждую ошибку в каждом обратном вызове. Для этого подойдёт линтер standard.
 4. Создавайте переиспользуемые функции и помещайте их в модули, чтобы сократить время для понимания вашего кода. Разделяйте код на маленькие кусочки — это поможет обрабатывать ошибки, писать тесты, заставит вас создавать стабильный, задокументированный публичный API и облегчит его рефакторинг.
+
+[Назад к теме](#функциональные-шаблоны)
 
  - [http://callbackhell.ru/](http://callbackhell.ru/)
  - [https://habr.com/ru/articles/319094/](https://habr.com/ru/articles/319094/)
@@ -538,6 +550,8 @@ debugNow("message"); // [HH:mm] DEBUG message
 Для каррирования необходима функция с фиксированным количеством аргументов.
 Функцию, которая использует остаточные параметры, типа f(...args), так каррировать не получится.
 
+[Назад к теме](#функциональные-шаблоны)
+
  - [https://learn.javascript.ru/currying-partials](https://learn.javascript.ru/currying-partials)
  - [https://habr.com/ru/companies/ruvds/articles/427295/](https://habr.com/ru/companies/ruvds/articles/427295/)
  - [https://habr.com/ru/articles/143465/](https://habr.com/ru/articles/143465/) примеры на c#.
@@ -595,6 +609,8 @@ function User(name) {
   // return this;  (неявно)
 }
 ```
+
+[Назад к теме](#объектно-ориентированное-программирование-ооп)
 
 - [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new)
 - [https://learn.javascript.ru/constructor-new](https://learn.javascript.ru/constructor-new)
@@ -689,6 +705,8 @@ john = {
 */
 ```
 
+[Назад к теме](#объектно-ориентированное-программирование-ооп)
+
 - [https://learn.javascript.ru/constructor-new](https://learn.javascript.ru/constructor-new)
 - [https://metanit.com/web/javascript/4.5.php](https://metanit.com/web/javascript/4.5.php)
 - [https://habr.com/ru/articles/151070/](https://habr.com/ru/articles/151070/)
@@ -767,6 +785,8 @@ Article.publisher = "Илья Кантор";
 ```
 
 Статические свойства и методы наследуются.
+
+[Назад к теме](#объектно-ориентированное-программирование-ооп)
 
  - [https://learn.javascript.ru/private-protected-properties-methods](https://learn.javascript.ru/private-protected-properties-methods)
  - [https://learn.javascript.ru/static-properties-methods](https://learn.javascript.ru/static-properties-methods)
@@ -858,6 +878,8 @@ d.speak(); // Митци лает
 
 Если в подклассе присутствует конструктор, он должен сначала вызвать super, прежде чем использовать this.
 
+[Назад к теме](#классы-ecmascript)
+
  - [https://learn.javascript.ru/class](https://learn.javascript.ru/class)
  - [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
  - [https://habr.com/ru/articles/518386/](https://habr.com/ru/articles/518386/)
@@ -865,6 +887,8 @@ d.speak(); // Митци лает
 ## 12. Различия между объявлениями классов и функциями-конструкторами.
 
 Разница между объявлением функции (function declaration) и объявлением класса (class declaration) в том, что объявление функции совершает подъём (hoisted), в то время как объявление класса — нет. Поэтому вначале необходимо объявить ваш класс и только затем работать с ним.
+
+[Назад к теме](#классы-ecmascript)
 
  - [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
 
@@ -877,6 +901,8 @@ d.speak(); // Митци лает
 Вы не можете использовать оператор delete и super.prop или super[expr] для удаления свойств родительского класса, он выдаст: ReferenceError.
 
 При определении незаписываемых свойств с помощью, например, Object.defineProperty, super не может перезаписать значение свойства.
+
+[Назад к теме](#классы-ecmascript)
 
  - [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/super](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/super)
  - [https://learn.javascript.ru/class-inheritance](https://learn.javascript.ru/class-inheritance)
@@ -956,6 +982,8 @@ constructorReturns = FnClass.apply(instance, arguments);
 4. Возвращает экземпляр функции-класса, но если FnClass нам вернул обьект, тогда его:
 return constructorReturns instanceof Object ? constructorReturns : instance;
 
+[Назад к теме](#прототипическое-наследование)
+
  - [https://learn.javascript.ru/prototype](https://learn.javascript.ru/prototype)
  - [https://habr.com/ru/companies/otus/articles/685528/](https://habr.com/ru/companies/otus/articles/685528/)
  - [https://habr.com/ru/articles/140810/](https://habr.com/ru/articles/140810/)
@@ -972,6 +1000,8 @@ return constructorReturns instanceof Object ? constructorReturns : instance;
  - `set` - Функция, изменяющая значение свойства, либо undefined, если такая функция отсутствует (только в дескрипторе доступа).
  - `configurable` - Значение true, если тип дескриптора этого свойства может быть изменён и если свойство может быть удалено из содержащего его объекта, иначе false.
  - `enumerable` - Значение true, если это свойство доступно при перечислении свойств содержащего его объекта, иначе false.
+
+ [Назад к теме](#прототипическое-наследование)
 
   - [https://learn.javascript.ru/prototype-methods](https://learn.javascript.ru/prototype-methods)
   - [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/create](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
@@ -1052,6 +1082,8 @@ WeakSet – особый вид Set, не препятствующий сбор�
 То же самое относится и к WeakSet: можно добавлять элементы, проверять их наличие, но нельзя получить их список и даже узнать количество.
 Эти ограничения могут показаться неудобными, но, по сути, они не мешают WeakMap/WeakSet выполнять свою основную задачу – быть «вторичным» хранилищем данных для объектов, актуальный список которых (и сами они) хранится в каком-то другом месте.
 
+[Назад к теме](#расширенные-типы-данных-и-выражения-ecmascript)
+
  - [https://learn.javascript.ru/map-set](https://learn.javascript.ru/map-set)
  - [https://learn.javascript.ru/weakmap-weakset](https://learn.javascript.ru/weakmap-weakset)
 
@@ -1109,6 +1141,8 @@ try..catch работает синхронно.
 
 Блок finally срабатывает при любом выходе из try..catch, в том числе и return.
 
+[Назад к теме](#ошибки-javascript)
+
  - [https://learn.javascript.ru/try-catch](https://learn.javascript.ru/try-catch)
  - [https://learn.javascript.ru/exception](https://learn.javascript.ru/exception)
 
@@ -1128,6 +1162,8 @@ JavaScript позволяет вызывать throw с любыми аргум�
  - Интеграция с API сторонних сервисов требует обработки их специфических ошибок.
 
 Обёртывание исключений является распространённой техникой: функция ловит низкоуровневые исключения и создаёт одно «высокоуровневое» исключение вместо разных низкоуровневых. Иногда низкоуровневые исключения становятся свойствами этого объекта, как err.cause
+
+[Назад к теме](#ошибки-javascript)
 
  - [https://learn.javascript.ru/custom-errors](https://learn.javascript.ru/custom-errors)
  - [https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Error](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Error)
@@ -1304,6 +1340,8 @@ f();
 
 Поэтому queueMicrotask можно использовать для асинхронного выполнения функции в том же состоянии окружения.
 
+[Назад к теме](#ecmascript-расширенный)
+
  - [https://learn.javascript.ru/promise](https://learn.javascript.ru/promise)
  - [https://learn.javascript.ru/promise-basics](https://learn.javascript.ru/promise-basics)
  - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
@@ -1351,6 +1389,8 @@ f();
  - Сборка в свободное время (Idle-time collection) – чтобы уменьшить возможное влияние на производительность, сборщик мусора старается работать только во время простоя процессора.
 
 Существуют и другие способы оптимизации и разновидности алгоритмов сборки мусора.
+
+[Назад к теме](#ecmascript-расширенный)
 
  - [https://learn.javascript.ru/garbage-collection](https://learn.javascript.ru/garbage-collection)
  - [https://habr.com/ru/articles/779186/](https://habr.com/ru/articles/779186/)
@@ -1438,6 +1478,8 @@ window.history.go(1);
 
 По такому же принципу, можно перемещаться вперёд на 2 страницы, передавая аргумент 2, и так далее.
 
+[Назад к теме](#глобальный-объект-window)
+
 [https://developer.mozilla.org/ru/docs/Web/API/Location](https://developer.mozilla.org/ru/docs/Web/API/Location)
 [https://developer.mozilla.org/ru/docs/Web/API/History_API](https://developer.mozilla.org/ru/docs/Web/API/History_API)
 
@@ -1508,6 +1550,8 @@ const isAndroid = navigator.userAgent.toLowerCase().match(/android/i);
 const isiPhone = navigator.userAgent.toLowerCase().match(/iphone/i);
 const isiPad = navigator.userAgent.toLowerCase().match(/ipad/i);
 ```
+
+[Назад к теме](#глобальный-объект-window)
 
  - [https://itchief.ru/javascript/window-navigator](https://itchief.ru/javascript/window-navigator)
  - [https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/User-Agent](https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/User-Agent)
@@ -1586,6 +1630,8 @@ Layout - это рекурсивный процесс. Он начинается
 #### Динамические изменения
 
 Браузеры пытаются выполнить минимальные возможные действия в ответ на изменение. Таким образом, изменения в цвете элемента вызовут только перерисовку элемента. Изменения в позиции элемента приведут к перекомпоновке и перерисовке элемента, его детей и, возможно, братьев и сестер. Добавление узла DOM приведет к перекомпоновке и перерисовке узла. Основные изменения, такие как увеличение размера шрифта элемента, приведут к недействительности кэша, перекомпоновке и перерисовке всего дерева.
+
+[Назад к теме](#жизненный-цикл-страницы)
 
  - [https://web.dev/articles/howbrowserswork#scripts](https://web.dev/articles/howbrowserswork#scripts)
  - [https://developer.mozilla.org/ru/docs/Web/Performance/How_browsers_work](https://developer.mozilla.org/ru/docs/Web/Performance/How_browsers_work)
@@ -1885,6 +1931,8 @@ let response = fetch(protectedUrl, {
 
 Мы можем отправить бинарные данные при помощи fetch, используя объекты `Blob` или `BufferSource`.
 
+[Назад к теме](#сетевые-запросы)
+
  - [https://learn.javascript.ru/xmlhttprequest](https://learn.javascript.ru/xmlhttprequest)
  - [https://learn.javascript.ru/fetch](https://learn.javascript.ru/fetch)
  - [https://learn.javascript.ru/fetch-progress](https://learn.javascript.ru/fetch-progress)
@@ -1893,6 +1941,8 @@ let response = fetch(protectedUrl, {
 ## 25. Различия между setTimeout и requestAnimationFrame.
 
 Главное отличие от setTimeout() / setInterval() в том, что здесь вам не нужно указывать время, через которое функция запустится. requestAnimationFrame() работает гораздо эффективнее, учитывая частоту кадров и производительность системы.
+
+[Назад к теме](#таймеры)
 
  - [https://developer.mozilla.org/ru/docs/Web/Performance/CSS_JavaScript_animation_performance](https://developer.mozilla.org/ru/docs/Web/Performance/CSS_JavaScript_animation_performance)
  - [https://habr.com/ru/articles/260449/](https://habr.com/ru/articles/260449/)
@@ -1911,6 +1961,8 @@ let response = fetch(protectedUrl, {
 - `Symbol`
 - `null` и `undefined`: соответствуют значениям `null` и `undefined` в javascript
 - `Never`: также представляет отсутствие значения и используется в качестве возвращаемого типа функций, которые генерируют или возвращают ошибку
+
+[Назад к теме](#typescript)
 
  - [https://habr.com/ru/companies/piter/articles/518428/](https://habr.com/ru/companies/piter/articles/518428/)
  - [https://scriptdev.ru/book/types/#_3](https://scriptdev.ru/book/types/#_3)
@@ -1962,6 +2014,8 @@ var current: Season = Season.Summer;
 console.log(current);           // 3
 console.log(Season.Autumn);     // Осень
 ```
+
+[Назад к теме](#typescript)
 
  - [https://metanit.com/web/typescript/2.11.php](https://metanit.com/web/typescript/2.11.php)
  - [https://scriptdev.ru/guide/015/](https://scriptdev.ru/guide/015/)
@@ -2173,6 +2227,8 @@ animal = goofy;
 
 Объединять можно не только псевдонимы, но и интерфейсы. Принцип тот же, что и при пересечении. Результатом станет новый псевдоним типа, объединяющий интерфейсы. Получить новый интерфейс в результате объединения не получится.
 
+[Назад к теме](#typescript)
+
  - [https://habr.com/ru/sandbox/186102/](https://habr.com/ru/sandbox/186102/)
  - [https://htmlacademy.ru/blog/js/types-vs-interfaces](https://htmlacademy.ru/blog/js/types-vs-interfaces)
 
@@ -2239,6 +2295,8 @@ employee.sayWords("Привет, как дела?");
 
 Опять же объект, который реализует интерфейс, также обязан реализовать определенную в интерфейсе функцию с тем же набором параметров и тем типом выходного результата. В данном случае функция sayWords() в качестве параметра принимает строку и ничего возвращает, выводя на консоль некоторое сообщение.
 
+[Назад к теме](#typescript)
+
  - [https://metanit.com/web/typescript/3.3.php](https://metanit.com/web/typescript/3.3.php)
 
 ## 30. Типы функций.
@@ -2295,6 +2353,8 @@ const sum: Operation = function(x: number, y: number): number {
  
 console.log(mathOp(10, 20, sum)); // 30
 ```
+
+[Назад к теме](#typescript)
 
  - [https://metanit.com/web/typescript/2.3.php](https://metanit.com/web/typescript/2.3.php)
  - [https://scriptdev.ru/guide/020/](https://scriptdev.ru/guide/020/)
@@ -2520,6 +2580,9 @@ type Lowercased = Lowercase<'Hello'>; // 'hello'
 type Capitalized = Capitalize<'hello'>; // 'Hello'
 type Uncapitalized = Uncapitalize<'Hello'>; // 'hello'
 ```
+
+[Назад к теме](#typescript)
+
  - [https://habr.com/ru/articles/711686/](https://habr.com/ru/articles/711686/)
  - [https://www.typescriptlang.org/docs/handbook/utility-types.html](https://www.typescriptlang.org/docs/handbook/utility-types.html)
 
@@ -2670,6 +2733,8 @@ function f1(p: B | C) {
 }
 ```
 
+[Назад к теме](#typescript)
+
  - [https://scriptdev.ru/guide/036/#-](https://scriptdev.ru/guide/036/#-)
  - [https://medium.com/@eqbits/что-такое-type-guards-в-typescript-24834d2b4f](https://medium.com/@eqbits/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-type-guards-%D0%B2-typescript-24834d2b4f)
 
@@ -2691,6 +2756,8 @@ type User = { name: string, age: number };
 type Admin = { name: string, age: number, privileges: string[] };
 type SuperUser = User & Admin;
 ```
+
+[Назад к теме](#typescript)
 
  - [https://habr.com/ru/companies/ruvds/articles/712548/](https://habr.com/ru/companies/ruvds/articles/712548/)
 
@@ -2724,6 +2791,8 @@ let myGenericNumber = new GenericNumber<number>();
 myGenericNumber.zeroValue = 0;
 myGenericNumber.add = function(x, y) { return x + y; };
 ```
+
+[Назад к теме](#typescript)
 
  - [https://habr.com/ru/companies/ruvds/articles/712548/](https://habr.com/ru/companies/ruvds/articles/712548/)
  - [https://scriptdev.ru/book/types/#_7](https://scriptdev.ru/book/types/#_7)
@@ -2786,7 +2855,9 @@ namespace Hello {
 ```
 
 const helloWorld = Hello.helloWorld();
-Больше всего этот механизм полезен авторам библиотек и оберток с типами @types/. Они заключают все интерфейсы в один namespace, совпадающий с названием библиотеки. Это гарантирует отсутствие коллизий имен и упрощает пользователям слияние интерфейсов
+Больше всего этот механизм полезен авторам библиотек и оберток с типами @types/. Они заключают все интерфейсы в один namespace, совпадающий с названием библиотеки. Это гарантирует отсутствие коллизий имен и упрощает пользователям слияние интерфейсов.
+
+[Назад к теме](#typescript)
 
  - [https://code-basics.com/ru/languages/typescript/lessons/modules](https://code-basics.com/ru/languages/typescript/lessons/modules)
  - [https://habr.com/ru/companies/macloud/articles/563722/](https://habr.com/ru/companies/macloud/articles/563722/)
@@ -2808,6 +2879,8 @@ const helloWorld = Hello.helloWorld();
  - Порождающие паттерны беспокоятся о гибком создании объектов без внесения в программу лишних зависимостей.
  - Структурные паттерны показывают различные способы построения связей между объектами.
  - Поведенческие паттерны заботятся об эффективной коммуникации между объектами.
+
+[Назад к теме](#паттерны-проектирования)
 
  -[https://refactoring.guru/ru/design-patterns/classification](https://refactoring.guru/ru/design-patterns/classification)
 
@@ -2832,6 +2905,8 @@ const helloWorld = Hello.helloWorld();
 ### D — Dependency Inversion (Принцип инверсии зависимостей)
 
 Модули верхнего уровня не должны зависеть от модулей нижнего уровня. И те, и другие должны зависеть от абстракций. Абстракции не должны зависеть от деталей. Детали должны зависеть от абстракций.
+
+[Назад к теме](#паттерны-проектирования)
 
  - [https://habr.com/ru/companies/productivity_inside/articles/505430/](https://habr.com/ru/companies/productivity_inside/articles/505430/)
 
@@ -2936,6 +3011,8 @@ Kanban  – это метод для построения внутренних �
 
 ![alt text](image-4.png)
 
+[Назад к теме](#методологии-разработки-программного-обеспечения)
+
  - [https://kachestvo.pro/kachestvo-upravleniya/proektnoe-upravlenie/agile-scrum-waterfall-i-kanban-dlya-upravleniya-proektami-v-kompanii/](https://kachestvo.pro/kachestvo-upravleniya/proektnoe-upravlenie/agile-scrum-waterfall-i-kanban-dlya-upravleniya-proektami-v-kompanii/)
 
 ## 39. Методы оценки проекта.
@@ -2979,6 +3056,8 @@ Kanban  – это метод для построения внутренних �
 
 **Оценка результата проекта.** Это уже финальная оценка, представляющая собой глубокий анализ собранных сведений и результатов работ по проекту в целом. Для этого потребуется изучить запланированные и реальные показатели, выделить лучшие инструменты, собрать обратную связь от участников команд, а также проанализировать результат для дальнейшего развития и поддержки продукта.
 Если следовать указанной последовательности и проводить оценку на каждом этапе, можно минимизировать риски и ошибки в момент реализации.
+
+[Назад к теме](#методологии-разработки-программного-обеспечения)
 
  - [https://timeweb.com/ru/community/articles/etapy-ocenki-proekta-osnovnye-principy-i-poleznye-instrumenty](https://timeweb.com/ru/community/articles/etapy-ocenki-proekta-osnovnye-principy-i-poleznye-instrumenty)
 
@@ -3026,6 +3105,8 @@ Kanban  – это метод для построения внутренних �
 
 Нагрузочное тестирование, проверяет как много пользователей может использовать приложение одновременно без существенного замедления работы или падения производительности.
 
+[Назад к теме](#тестирование)
+
  - [https://habr.com/ru/companies/otus/articles/720664/](https://habr.com/ru/companies/otus/articles/720664/)
 
 ## 41. Пирамида тестирования.
@@ -3040,6 +3121,8 @@ Kanban  – это метод для построения внутренних �
  - **Integration testing** - несколько модулей программы тестируются вместе;
  - **System testing** - вся программа тестируется полностью;
  - **Acceptance testing** - программа принимается заказчиком на соответствие заявленным требованиям либо тестировщики проходят end-to-end сценарии с точки зрения пользователя;
+
+[Назад к теме](#тестирование)
 
  - [https://vladislaveremeev.gitbook.io/qa_bible/vidy-metody-urovni-testirovaniya/piramida-urovni-testirovaniya-test-pyramid-testing-levels](https://vladislaveremeev.gitbook.io/qa_bible/vidy-metody-urovni-testirovaniya/piramida-urovni-testirovaniya-test-pyramid-testing-levels)
 
@@ -3088,6 +3171,8 @@ TDD — это больше о программировании и тестир�
 
 BDD предполагает описание тестировщиком или аналитиком пользовательских сценариев на естественном языке — если можно так выразиться, на языке бизнеса.
 
+[Назад к теме](#тестирование)
+
  - [https://medium.com/@lucyhackwrench/что-такое-tdd-и-bdd-на-пальцах-и-что-должен-знать-о-них-фронтендер-701a10e06bb9](https://medium.com/@lucyhackwrench/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-tdd-%D0%B8-bdd-%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BB%D1%8C%D1%86%D0%B0%D1%85-%D0%B8-%D1%87%D1%82%D0%BE-%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD-%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-%D0%BE-%D0%BD%D0%B8%D1%85-%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80-701a10e06bb9)
  - [https://habr.com/ru/articles/459620/](https://habr.com/ru/articles/459620/)
 
@@ -3104,6 +3189,8 @@ HTTP-сообщения представляют собой обычный те�
 ### Производительность и аналитика
 
 Веб-приложения HTTPS загружаются быстрее, чем HTTP-приложения. Также HTTPS также лучше отслеживает реферальные ссылки. Реферальный трафик – это трафик на ваш сайт из сторонних источников, таких как реклама или обратные ссылки в социальных сетях. Вы должны включить HTTPS, если хотите, чтобы аналитическое программное обеспечение точно определяло ваши надежные источники трафика.
+
+[Назад к теме](#протоколы-веб-коммуникаций)
 
  - [https://aws.amazon.com/ru/compare/the-difference-between-https-and-http](https://aws.amazon.com/ru/compare/the-difference-between-https-and-http/#:~:text=HTTP%2D%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%82%20%D1%81%D0%BE%D0%B1%D0%BE%D0%B9%20%D0%BE%D0%B1%D1%8B%D1%87%D0%BD%D1%8B%D0%B9,%D0%B2%D1%81%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B2%20%D0%B7%D0%B0%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%BC%20%D0%B2%D0%B8%D0%B4%D0%B5.)
 
@@ -3171,6 +3258,8 @@ HTTP-ответ является сообщением, которое серве
  - 4xx - Коды данной категории означают, что на стороне клиента был отправлен некорректный запрос. Например, клиент в запросе указал не поддерживаемый метод или обратился к ресурсу, к которому у него нет доступа.
  - 5xx - Ответ с кодами из этой категории приходит, если на стороне сервера возникла ошибка.
 
+[Назад к теме](#протоколы-веб-коммуникаций)
+
   - [https://selectel.ru/blog/http-request/](https://selectel.ru/blog/http-request/)
 
 ## 45. Концепции RESTful API.
@@ -3178,6 +3267,8 @@ HTTP-ответ является сообщением, которое серве
 ### Что такое REST?
 
 REST расшифровывается как REpresentational State Transfer. Это был термин, первоначально введен Роем Филдингом (Roy Fielding), который также был одним из создателей протокола HTTP. Отличительной особенностью сервисов REST является то, что они позволяют наилучшим образом использовать протокол HTTP.
+
+[Назад к теме](#протоколы-веб-коммуникаций)
 
  - [https://habr.com/ru/articles/483202/](https://habr.com/ru/articles/483202/)
 
@@ -3214,6 +3305,8 @@ OWASP определяет Top Ten угроз:
 - X-XSS-Protection.
 - Сookies: HTTP-only, Secure, SameSite.
 - Библиотеки / фреймворки (например, Microsoft AntiXSS).
+
+[Назад к теме](#общие-знания-в-области-веб-безопасности)
 
  - [https://habr.com/ru/companies/oleg-bunin/articles/564630/](https://habr.com/ru/companies/oleg-bunin/articles/564630/)
  - [https://developer.mozilla.org/ru/docs/Web/HTTP/CORS](https://developer.mozilla.org/ru/docs/Web/HTTP/CORS)
@@ -3315,3 +3408,5 @@ OAuth определяет четыре роли:
 
  - [https://habr.com/ru/articles/340146/](https://habr.com/ru/articles/340146/)
  - [https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
+
+ [Назад к теме](#общие-знания-в-области-веб-безопасности)
